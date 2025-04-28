@@ -5,7 +5,7 @@ namespace HeartbeatBot.Job.Context
 {
     public class HealtCheckContext : DbContext
     {
-        public DbSet<App> Apps { get; set; }
+        public DbSet<App> Apps { get; set; } 
         public DbSet<OutboxMessage> OutboxMessages { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
